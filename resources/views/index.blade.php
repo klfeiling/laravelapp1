@@ -176,7 +176,7 @@
 	 <div class="main-content">
 			<div class="header">
 				<div class="logo">
-					<a href="index.html">
+					<a href="index">
 					<h1>Copyright Valuation——电影版权估值平台 </h1>
 					</a>
 				</div>
@@ -194,20 +194,20 @@
 			<div class="bootstrap_container">
             <nav class="navbar navbar-default w3_megamenu" role="navigation"><!-- 导航条开始 -->
                 <div class="navbar-header">
-          			<button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><i class="fa fa-home"></i></a>
+          			<button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index" class="navbar-brand"><i class="fa fa-home"></i></a>
 				</div><!-- end navbar-header -->
         
             <div id="defaultmenu" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">首页</a></li>	
+                    <li class="active"><a href="index">首页</a></li>	
                     <!-- Mega Menu -->
-					<li class="dropdown w3_megamenu-fw"><a href="show.html" >电影估值<b class="caret"></b></a></li>
+					<li class="dropdown w3_megamenu-fw"><a href="show" >电影估值<b class="caret"></b></a></li>
                         
 					<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">关于我们<b class="caret"></b></a>
 							 <ul class="dropdown-menu" role="menu">
 
-									<li><a href="about.html">平台简介</a></li>
-									<li><a href="blog.html">技术梗概</a></li>
+									<li><a href="about">平台简介</a></li>
+									<li><a href="blog">技术梗概</a></li>
 							</ul>
                   </li>
               </ul>
@@ -316,7 +316,7 @@
 					<h5>Dec 12-15</h5>
 					<h6>Multi-city</h6>
 					<div class="buy-tickets">
-						<a href="show.html">版权评估</a>
+						<a href="show">版权评估</a>
 					</div>
 				</div>
 			</li>
@@ -327,7 +327,7 @@
 					<h5>Dec 12-15</h5>
 					<h6>Multi-city</h6>
 					<div class="buy-tickets">
-						<a href="show.html">版权评估</a>
+						<a href="show">版权评估</a>
 					</div>
 				</div>
 			</li>
@@ -338,7 +338,7 @@
 					<h5>Dec 12-15</h5>
 					<h6>Multi-city</h6>
 					<div class="buy-tickets">
-						<a href="show.html">版权评估</a>
+						<a href="show">版权评估</a>
 					</div>
 				</div>
 			</li>
@@ -349,7 +349,7 @@
 					<h5>Dec 12-15</h5>
 					<h6>Multi-city</h6>
 					<div class="buy-tickets">
-						<a href="show.html">版权评估</a>
+						<a href="show">版权评估</a>
 					</div>
 				</div>
 			</li>
@@ -360,7 +360,7 @@
 					<h5>Dec 12-15</h5>
 					<h6>Multi-city</h6>
 					<div class="buy-tickets">
-						<a href="show.html">版权评估</a>
+						<a href="show">版权评估</a>
 					</div>
 				</div>
 			</li>
@@ -371,7 +371,7 @@
 					<h5>Dec 12-15</h5>
 					<h6>Multi-city</h6>
 					<div class="buy-tickets">
-						<a href="show.html">版权评估</a>
+						<a href="show">版权评估</a>
 					</div>
 				</div>
 			</li>
@@ -425,7 +425,7 @@
 										   <div class="info1"> </div>
 											 <div class="mask"></div>
 								              <div class="tab_desc">
-													<a href="show.html">版权评估</a>
+													<a href="show">版权评估</a>
 													<div class="percentage-w-t-s">
 														<h5>97</h5>
 														<p>% <br> Want to see</p>
@@ -441,7 +441,7 @@
 											 <div class="mask">
 						                     </div>
 								              <div class="tab_desc">
-													<a href="show.html">版权评估</a>
+													<a href="show">版权评估</a>
 													<div class="percentage-w-t-s">
 														<h5>98</h5>
 														<p>% <br> Want to see</p>
@@ -457,7 +457,7 @@
 						                        <div class="info1"> </div>
 							              </div>
 								                <div class="tab_desc">
-													<a href="show.html">版权评估</a>
+													<a href="show">版权评估</a>
 													<div class="percentage-w-t-s">
 														<h5>100</h5>
 														<p>% <br> Want to see</p>
@@ -478,7 +478,7 @@
 						                        <div class="info1"> </div>
 							              	</div>
 								                <div class="tab_desc">
-													<a href="show.html">版权评估</a>
+													<a href="show">版权评估</a>
 													<div class="percentage-w-t-s">
 														<h5>92</h5>
 														<p>% <br> Want to see</p>
@@ -494,7 +494,7 @@
 						                        <div class="info1"> </div>
 							              </div>
 								                <div class="tab_desc">
-													<a href="show.html">版权评估</a>
+													<a href="show">版权评估</a>
 													<div class="percentage-w-t-s">
 														<h5>100</h5>
 														<p>% <br> Want to see</p>
@@ -510,7 +510,7 @@
 						                        <div class="info1"> </div>
 							                </div>
 								               <div class="tab_desc">
-													<a href="show.html">版权评估</a>
+													<a href="show">版权评估</a>
 													<div class="percentage-w-t-s">
 														<h5>74</h5>
 														<p>% <br> Want to see</p>
@@ -531,7 +531,7 @@
 						                        <div class="info1"> </div>
 							                </div>
 								                <div class="tab_desc">
-													<a href="show.html">版权评估</a>
+													<a href="show">版权评估</a>
 													<div class="percentage-w-t-s">
 														<h5>88</h5>
 														<p>% <br> Want to see</p>
@@ -547,7 +547,7 @@
 						                        <div class="info1"> </div>
 							                </div>
 								                <div class="tab_desc">
-													<a href="show.html">版权评估</a>
+													<a href="show">版权评估</a>
 													<div class="percentage-w-t-s">
 														<h5>100</h5>
 														<p>% <br> Want to see</p>
@@ -563,7 +563,7 @@
 						                        <div class="info1"> </div>
 							                </div>
 								                <div class="tab_desc">
-													<a href="show.html">版权评估</a>
+													<a href="show">版权评估</a>
 													<div class="percentage-w-t-s">
 														<h5>90</h5>
 														<p>% <br> Want to see</p>
@@ -594,7 +594,7 @@
 										<p>Multi city</p>
 									</div>
 								<div class="f-buy-tickets">
-									<a href="show.html">版权评估</a>
+									<a href="show">版权评估</a>
 								</div>
 							</div>
 						</li>
@@ -608,7 +608,7 @@
 										<p>Multi city</p>
 									</div>
 								<div class="f-buy-tickets">
-									<a href="show.html">版权评估</a>
+									<a href="show">版权评估</a>
 								</div>
 							</div>
 						</li>
@@ -622,7 +622,7 @@
 										<p>Mumbai</p>
 									</div>
 								<div class="f-buy-tickets">
-									<a href="show.html">版权评估</a>
+									<a href="show">版权评估</a>
 								</div>
 							</div>
 						</li>
@@ -636,7 +636,7 @@
 										<p>Multi city</p>
 									</div>
 								<div class="f-buy-tickets">
-									<a href="show.html">版权评估</a>
+									<a href="show">版权评估</a>
 								</div>
 							</div>
 						</li>
@@ -650,7 +650,7 @@
 										<p>Multi city</p>
 									</div>
 								<div class="f-buy-tickets">
-									<a href="show.html">版权评估</a>
+									<a href="show">版权评估</a>
 								</div>
 							</div>
 						</li>
@@ -664,7 +664,7 @@
 										<p>Mumbai</p>
 									</div>								 
 								<div class="f-buy-tickets">
-									<a href="show.html">版权评估</a>
+									<a href="show">版权评估</a>
 								</div>
 							</div>
 						</li>
@@ -678,82 +678,82 @@
 					<ul class="mov_list">
 						<li><i class="fa fa-star"></i></li>
 						<li>77%</li>
-						<li><a href="show.html">Jurassic World (3D) (U/A)</a></li>
+						<li><a href="show">Jurassic World (3D) (U/A)</a></li>
 					</ul>
 					<ul class="mov_list">
 						<li><i class="fa fa-star"></i></li>
 						<li>80%</li>
-						<li><a href="show.html">Jurassic World (3D Hindi) (U/A)</a></li>
+						<li><a href="show">Jurassic World (3D Hindi) (U/A)</a></li>
 					</ul>
 					<ul class="mov_list">
 						<li><i class="fa fa-star"></i></li>
 						<li>69%</li>
-						<li><a href="show.html">Dil Dhadakne Do (U/A)</a></li>
+						<li><a href="show">Dil Dhadakne Do (U/A)</a></li>
 					</ul>
 					<ul class="mov_list">
 						<li><i class="fa fa-star"></i></li>
 						<li>65%</li>
-						<li><a href="show.html">Hamari Adhuri Kahani (U)</a></li>
+						<li><a href="show">Hamari Adhuri Kahani (U)</a></li>
 					</ul>
 					<ul class="mov_list">
 						<li><i class="fa fa-star"></i></li>
 						<li>83%</li>
-						<li><a href="show.html">Premam (U)</a></li>
+						<li><a href="show">Premam (U)</a></li>
 					</ul>
 					<ul class="mov_list">
 						<li><i class="fa fa-star"></i></li>
 						<li>87%</li>
-						<li><a href="show.html">Tanu Weds Manu Returns (U/A)</a></li>
+						<li><a href="show">Tanu Weds Manu Returns (U/A)</a></li>
 					</ul>
 					<ul class="mov_list">
 						<li><i class="fa fa-star"></i></li>
 						<li>71%</li>
-						<li><a href="show.html">Romeo Juliet (U)</a></li>
+						<li><a href="show">Romeo Juliet (U)</a></li>
 					</ul>
 					<ul class="mov_list">
 						<li><i class="fa fa-star"></i></li>
 						<li>81%</li>
-						<li><a href="show.html">Jurassic World (IMAX 3D) (U/A)</a></li>
+						<li><a href="show">Jurassic World (IMAX 3D) (U/A)</a></li>
 					</ul>
 					<ul class="mov_list">
 						<li><i class="fa fa-star"></i></li>
 						<li>80%</li>
-						<li><a href="show.html">Jurassic World (2D Hindi) (U/A)</a></li>
+						<li><a href="show">Jurassic World (2D Hindi) (U/A)</a></li>
 					</ul>
 					<ul class="mov_list">
 						<li><i class="fa fa-star"></i></li>
 						<li>89%</li>
-						<li><a href="show.html">Kaaka Muttai (U)</a></li>
+						<li><a href="show">Kaaka Muttai (U)</a></li>
 					</ul>
 				</div>
 				<div class="quick-pay">
 					<h3>Quick Pay</h3>
-					<p class="payText">Make your online payments a breeze. Save your Credit, Debit card and Netbanking in your BookMyShow profile.. <a href="blog.html">Read more</a></p>
+					<p class="payText">Make your online payments a breeze. Save your Credit, Debit card and Netbanking in your BookMyShow profile.. <a href="blog">Read more</a></p>
 				</div>
 				<div class="our-blog">
 					<h5>Our Blog</h5>
 					<div class="post-article">
-						<a href="blog.html" class="post-title">Lorem Ipsum is simply dummy text of the printing</a>
+						<a href="blog" class="post-title">Lorem Ipsum is simply dummy text of the printing</a>
 						<i>Posted on June 15, 2015</i>
-						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old...<br> <a href="blog.html">Read more</a></p>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old...<br> <a href="blog">Read more</a></p>
 					</div>
 					<div class="post-article">
-						<a href="blog.html" class="post-title">Sed ut perspiciatis unde</a>
+						<a href="blog" class="post-title">Sed ut perspiciatis unde</a>
 						<i>Posted on June 15, 2015</i>
-						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old...<br> <a href="blog.html">Read more</a></p>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old...<br> <a href="blog">Read more</a></p>
 					</div>
 					<div class="post-article">
-						<a href="blog.html" class="post-title">Sed ut perspiciatis unde</a>
+						<a href="blog" class="post-title">Sed ut perspiciatis unde</a>
 						<i>Posted on June 15, 2015</i>
-						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old...<br> <a href="blog.html">Read more</a></p>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old...<br> <a href="blog">Read more</a></p>
 					</div>
 				</div>
 			</div>
 			<div class="clearfix"></div>			
 		</div>
 		<div class="footer-top-strip">
-			<p><span>下轮热播 <i>(Friday, 19 Jun) </i>: </span><a href="show.html">Disney's ABCD 2 (3D) (U)</a>, <a href="show.html"> 2 Premi Premache</a> , <a href="show.html">Dekh Ke (Bhojpuri)</a> , <a href="show.html">Disney's ABCD 2 (2D) (U)</a>, <a href="show.html">Dekh Ke (Bhojpuri)</a></p>
-			<p><span>即将上映 :</span><a href="show.html"> 2 Premi Premache</a>, <a href="show.html">Acharam, Dekh Ke (Bhojpuri)</a>, <a href="show.html">Entourage</a>, <a href="show.html">Kuttram Kadithal</a></p>
+			<p><span>下轮热播 <i>(Friday, 19 Jun) </i>: </span><a href="show">Disney's ABCD 2 (3D) (U)</a>, <a href="show"> 2 Premi Premache</a> , <a href="show">Dekh Ke (Bhojpuri)</a> , <a href="show">Disney's ABCD 2 (2D) (U)</a>, <a href="show">Dekh Ke (Bhojpuri)</a></p>
+			<p><span>即将上映 :</span><a href="show"> 2 Premi Premache</a>, <a href="show">Acharam, Dekh Ke (Bhojpuri)</a>, <a href="show">Entourage</a>, <a href="show">Kuttram Kadithal</a></p>
 	   </div>
 		<div class="clearfix"></div>
 			<div class="copy-rights text-center">

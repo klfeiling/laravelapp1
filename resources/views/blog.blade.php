@@ -176,7 +176,7 @@
 		  <div class="main-content">
 			<div class="header">
 				<div class="logo">
-					<a href="index.html">
+					<a href="index">
 					<h1>Copyright Valuation——电影版权估值平台 </h1>
 					</a>
 				</div>
@@ -194,20 +194,20 @@
 			<div class="bootstrap_container">
             <nav class="navbar navbar-default w3_megamenu" role="navigation"><!-- 导航条开始 -->
                 <div class="navbar-header">
-          			<button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><i class="fa fa-home"></i></a>
+          			<button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index" class="navbar-brand"><i class="fa fa-home"></i></a>
 				</div><!-- end navbar-header -->
         
             <div id="defaultmenu" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">首页</a></li>	
+                    <li class="active"><a href="index">首页</a></li>	
                     <!-- Mega Menu -->
-					<li class="dropdown w3_megamenu-fw"><a href="show.html" >电影估值<b class="caret"></b></a></li>
+					<li class="dropdown w3_megamenu-fw"><a href="show" >电影估值<b class="caret"></b></a></li>
                         
 					<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">关于我们<b class="caret"></b></a>
 							 <ul class="dropdown-menu" role="menu">
 
-									<li><a href="about.html">平台简介</a></li>
-									<li><a href="blog.html">技术梗概</a></li>
+									<li><a href="about">平台简介</a></li>
+									<li><a href="blog">技术梗概</a></li>
 							</ul>
                   </li>
               </ul>
