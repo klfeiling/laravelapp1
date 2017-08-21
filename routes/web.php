@@ -11,22 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::get('/index', function () {
-    return view('index');
+    return view('Pages.index');
 });
 
 Route::get('/blog', function () {
-    return view('blog');
+    return view('Pages.blog');
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('Pages.about');
 });
 
 Route::get('/show', function () {
-    return view('show');
+    return view('Pages.show');
 });
