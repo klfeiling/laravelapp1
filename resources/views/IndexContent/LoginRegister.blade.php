@@ -19,19 +19,33 @@
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div class="tab-pane active" id="Login">
-                                <form role="form" class="form-horizontal">
-                                    <div class="form-group">
+                                <form role="form" class="form-horizontal" method="POST" action="{{ route('login') }}">
+                                    {{ csrf_field() }}
+
+                                    <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                         <label for="email" class="col-sm-2 control-label">
                                             Email</label>
                                         <div class="col-sm-10">
-                                            <input type="email" class="form-control" id="email1" placeholder="Email" />
+                                            <input type="email" class="form-control" id="email1" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus/>
+
+                                            @if ($errors->has('email'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('email') }}</strong>
+                                                </span>
+                                            @endif
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                                    <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                                        <label for="password" class="col-sm-2 control-label">
                                             密码</label>
                                         <div class="col-sm-10">
-                                            <input type="密码" class="form-control" id="exampleInputPassword1" placeholder="密码" />
+                                            <input id="password" type="password" class="form-control" name="password" placeholder="password"  required/>
+
+                                            @if ($errors->has('password'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('password') }}</strong>
+                                                </span>
+                                            @endif
                                         </div>
                                     </div>
                                     <div class="row">
@@ -40,27 +54,34 @@
                                         <div class="col-sm-10">
                                             <button type="submit" class="btn btn-primary btn-sm">
                                                 提交</button>
-                                            <a href="javascript:;">忘记密码？</a>
+                                            <a href="{{ route('password.request') }}">忘记密码？</a>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                             <div class="tab-pane" id="Registration">
-                                <form role="form" class="form-horizontal">
+                                <form role="form" class="form-horizontal" method="post" action="{{ route('register') }}">
+                                    {{ csrf_field() }}
                                     <div class="form-group">
-                                        <label for="email" class="col-sm-2 control-label">
+                                        <label for="name" class="col-sm-2 control-label">
                                             姓名</label>
                                         <div class="col-sm-10">
                                             <div class="row">
                                                 <div class="col-md-3">
-                                                    <select class="form-control">
+                                                    <select id="sex" name="sex" class="form-control">
                                                         <option>Mr.</option>
                                                         <option>Ms.</option>
                                                         <option>Mrs.</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-md-9">
-                                                    <input type="姓名" class="form-control" placeholder="姓名" />
+                                                    <input id="name" type="text" name="name" class="form-control" placeholder="name" required autofocus />
+
+                                                    @if ($errors->has('name'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->first('name') }}</strong>
+                                                        </span>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -69,30 +90,53 @@
                                         <label for="email" class="col-sm-2 control-label">
                                             Email</label>
                                         <div class="col-sm-10">
-                                            <input type="email" class="form-control" id="email" placeholder="Email" />
+                                            <input  type="email" name="email" class="form-control" id="email" placeholder="Email" required />
+
+                                            @if ($errors->has('email'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('email') }}</strong>
+                                                </span>
+                                            @endif
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="mobile" class="col-sm-2 control-label">
+                                        <label for="phone" class="col-sm-2 control-label">
                                             联系方式</label>
                                         <div class="col-sm-10">
-                                            <input type="联系方式" class="form-control" id="联系方式" placeholder="联系方式" />
+                                            <input type="text" name="phone" class="form-control" id="phone" placeholder="phone" required />
+                                            @if ($errors->has('phone'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('phone') }}</strong>
+                                                </span>
+                                            @endif
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="password" class="col-sm-2 control-label">
                                             密码</label>
                                         <div class="col-sm-10">
-                                            <input type="密码" class="form-control" id="密码" placeholder="密码" />
+                                            <input type="password" name="password" class="form-control" id="password" placeholder="password" required />
+                                            @if ($errors->has('password'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('password') }}</strong>
+                                                </span>
+                                            @endif
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password-confirm" class="col-sm-2 control-label">
+                                            确认密码</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" name="password_confirmation" class="form-control" id="password-confirm" placeholder="password" required />
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-2">
                                         </div>
                                         <div class="col-sm-10">
-                                            <button type="button" class="btn btn-primary btn-sm">
+                                            <button type="submit" class="btn btn-primary btn-sm">
                                                 保存并继续</button>
-                                            <button type="button" class="btn btn-default btn-sm">
+                                            <button type="reset" class="btn btn-default btn-sm">
                                                 取消</button>
                                         </div>
                                     </div>

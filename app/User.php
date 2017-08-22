@@ -10,13 +10,12 @@ class User extends Authenticatable
     use Notifiable;
 
     /**
-    ranch
-     * rgit* The attributes that are mass assignable.
+     * The attributes that are mass assignable.
      *
      * @var array
-     */p
+     */
     protected $fillable = [
-        'name', 'email', 'password',
+        'sex','name', 'email','phone', 'password',
     ];
 
     /**

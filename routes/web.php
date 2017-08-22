@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('/', function () {
+    return view('Pages.index');
+});
 
 Route::get('/index', function () {
     return view('Pages.index');
@@ -26,4 +29,10 @@ Route::get('/about', function () {
 
 Route::get('/show', function () {
     return view('Pages.show');
+});
+
+Auth::routes();
+
+Route::get('/home', function () {
+    return view('Pages.index');
 });
