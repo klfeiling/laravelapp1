@@ -1,13 +1,13 @@
 @extends('AppTemplate')
 @section('content')
-	@include('IndexContent.PageHeader')
-	@include('IndexContent.LoginRegister')
+	@include('PagesContents.PageHeader')
+	@include('auth.login')
 	<div class="clearfix"></div>
 	<div class="container">
 		<div class="main-content">
-			@include('IndexContent.Navigation1')
-			@include('IndexContent.Navigation2')
-			@include('ShowContent.Navigation')
+			@include('PagesContents.Navigation1')
+			@include('PagesContents.Navigation2')
+			@include('PagesContents.ShowNavigation')
 		</div>
 	</div>
 @stop
