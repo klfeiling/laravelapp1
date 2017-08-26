@@ -31,6 +31,12 @@ Route::get('/show', function () {
     return view('Pages.show');
 });
 
+Route::get('/information','authPersonalInformationController@show' )->name('infoShow');
+
+Route::post('/information', 'authPersonalInformationController@save')->name('infoUpdate');
+
+Route::post('/information/PasswordReset', 'authPersonalInformationController@reset')->name('PwReset');
+
 Auth::routes();
 
 Route::get('/home', function () {

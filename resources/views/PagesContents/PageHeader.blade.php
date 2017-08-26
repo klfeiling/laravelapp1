@@ -10,12 +10,27 @@
             </div>
         @else
             <div  class="header-top-right">
-                <a href="">{{ Auth::user()->name }}</a>
-                <a href="{{ route('logout') }}"
-                   onclick="event.preventDefault();
-                   document.getElementById('logout-form').submit();">
-                    Logout
-                </a>
+
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <button class="btn btn-primary" id="dropdownMenu1" data-toggle="dropdown">
+                                {{ Auth::user()->sex }}{{ Auth::user()->name }}
+                                <b class="caret"></b>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="information">个人信息</a></li>
+                                <li>
+                                    <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                       document.getElementById('logout-form').submit();">
+                                        退出登录
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     {{ csrf_field() }}
                 </form>
