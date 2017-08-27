@@ -7,7 +7,8 @@
 		<div class="main-content">
 			@include('PagesContents.Navigation1')
 			@include('PagesContents.Navigation2')
-			@include('PagesContents.ShowNavigation')
+			@include('PagesContents.ShowInput')
+			@include('PagesContents.ShowResults')
 		</div>
 	</div>
 @stop
