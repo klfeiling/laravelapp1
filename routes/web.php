@@ -29,11 +29,15 @@ Route::get('/about', function () {
 
 Route::get('/show', function () {
     return view('Pages.show');
+})->middleware('auth');
+
+Route::get('/unlogin', function () {
+    return view('errors.unlogin');
 });
 
 Route::post('/CoRInfo', 'CopyRightInfoMailController@SendEmail')->name('CoRInfo');
 
-Route::get('/information','authPersonalInformationController@show' )->name('infoShow');
+Route::get('/information','authPersonalInformationController@show' )->name('infoShow')->middleware('auth');
 
 Route::post('/information', 'authPersonalInformationController@save')->name('infoUpdate');
 
