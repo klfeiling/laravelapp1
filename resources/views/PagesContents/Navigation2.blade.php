@@ -6,7 +6,7 @@
 
         <div id="defaultmenu" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index">首页</a></li>
+                <li><a href="index">首页</a></li>
                 <!-- Mega Menu -->
                 <li class="dropdown w3_megamenu-fw"><a href="show" >电影估值<b class="caret"></b></a></li>
 

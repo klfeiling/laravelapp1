@@ -31,6 +31,8 @@ Route::get('/show', function () {
     return view('Pages.show');
 });
 
+Route::post('/CoRInfo', 'CopyRightInfoMailController@SendEmail')->name('CoRInfo');
+
 Route::get('/information','authPersonalInformationController@show' )->name('infoShow');
 
 Route::post('/information', 'authPersonalInformationController@save')->name('infoUpdate');

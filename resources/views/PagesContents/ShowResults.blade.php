@@ -30,38 +30,38 @@
         <div class="movie-date-selection">
             <ul>
                 <li class="location">
-                    <a href="pic-a-movie.html"><i class="fa fa-map-marker"></i>Theater Name: Location</a>
+                    <a href=""><i class="fa fa-map-marker"></i>Theater Name: Location</a>
                 </li>
                 <li class="time">
-                    <a href="movie-payment.html">11:00 AM</a>
+                    <a href="">11:00 AM</a>
                 </li>
                 <li class="time">
-                    <a href="movie-payment.html">3:00 PM</a>
+                    <a href="">3:00 PM</a>
                 </li>
                 <li class="time">
-                    <a href="movie-payment.html">6:20 PM</a>
+                    <a href="">6:20 PM</a>
                 </li>
                 <li class="time">
-                    <a href="movie-payment.html">9:00 PM</a>
+                    <a href="">9:00 PM</a>
                 </li>
             </ul>
         </div>
         <div class="movie-date-selection">
             <ul>
                 <li class="location">
-                    <a href="pic-a-movie.html"><i class="fa fa-map-marker"></i>Theater Name: Location</a>
+                    <a href=""><i class="fa fa-map-marker"></i>Theater Name: Location</a>
                 </li>
                 <li class="time">
-                    <a href="movie-payment.html">11:00 AM</a>
+                    <a href="">11:00 AM</a>
                 </li>
                 <li class="time">
-                    <a href="movie-payment.html">3:00 PM</a>
+                    <a href="">3:00 PM</a>
                 </li>
                 <li class="time">
-                    <a href="movie-payment.html">6:20 PM</a>
+                    <a href="">6:20 PM</a>
                 </li>
                 <li class="time">
-                    <a href="movie-payment.html">9:00 PM</a>
+                    <a href="">9:00 PM</a>
                 </li>
             </ul>
         </div>
@@ -89,9 +89,16 @@
             </ol>
         </div>
 
+        <form role="form" action="{{ route('CoRInfo') }}" method="post">
+            {{ csrf_field() }}
+            <div class="col-sm-offset-5">
+                <div class="form-group">
+                    <input type="submit" value="发送版权信息到邮箱" class="btn btn-primary">
+                </div>
+            </div>
+        </form>
+
     </div>
-
-
 
     <div class="clearfix"></div>
 </div>
