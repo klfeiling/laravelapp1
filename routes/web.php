@@ -48,3 +48,7 @@ Auth::routes();
 Route::get('/home', function () {
     return view('Pages.index');
 });
+
+Route::get('/{others}', function () {
+    return view('errors.404');
+});
