@@ -11,13 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('Pages.index');
-});
+Route::get('/', 'IndexController@Show');
 
-Route::get('/index', function () {
-    return view('Pages.index');
-});
+Route::get('/index', 'IndexController@Show');
+
+Route::get('/home','IndexController@Show');
 
 Route::get('/blog', function () {
     return view('Pages.blog');
@@ -44,10 +42,6 @@ Route::post('/information', 'authPersonalInformationController@save')->name('inf
 Route::post('/information/PasswordReset', 'authPersonalInformationController@reset')->name('PwReset');
 
 Auth::routes();
-
-Route::get('/home', function () {
-    return view('Pages.index');
-});
 
 Route::get('/{others}', function () {
     return view('errors.404');

@@ -95,8 +95,7 @@
                                     </div>
                                     <div class="col-sm-10 col-sm-offset-1">
                                       <div class="form-group">
-                                        <label>邮箱 </label>
-                                        <input name="email" type="email" class="form-control" value="{{ Auth::user()->email }}">
+                                        <input name="email" type="hidden" class="form-control" value="{{ Auth::user()->email }}">
                                       </div>
                                       <div class="form-group">
                                         <label>电话</label>
@@ -138,14 +137,13 @@
                                         </form>
                                     </div>
                                 </div>
-
                         </div>
+                    @include('errors.PasswordResetErrors')
                 </div>
             </div> <!-- wizard container -->
         </div>
         </div><!-- end row -->
     </div> <!--  big container -->
-
 
 </div>
 

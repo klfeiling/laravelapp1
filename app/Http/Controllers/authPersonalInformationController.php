@@ -36,17 +36,15 @@ class authPersonalInformationController extends Controller
 
         $rules = [
 
-            'oldpassword'=>'required|between:6,20',
+            'oldpassword'=>'required',
 
-            'password'=>'required|between:6,20|confirmed',
+            'password'=>'required|confirmed',
 
         ];
 
         $messages = [
 
             'required' => '密码不能为空',
-
-            'between' => '密码必须是6~20位之间',
 
             'confirmed' => '新密码和确认密码不匹配'
 
@@ -68,7 +66,7 @@ class authPersonalInformationController extends Controller
 
         if ($validator->fails()) {
 
-            return back()->withErrors($validator);  //返回一次性错误
+            return back()->withErrors($validator); //返回一次性错误
 
         }
 

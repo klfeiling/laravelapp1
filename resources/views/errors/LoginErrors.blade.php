@@ -1,4 +1,4 @@
-@if ($errors->has('email'))
+@if ($errors->first('email') == 'These credentials do not match our records.')
     <div class="modal fade" id="myModalLoginErrors" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabelLoginErrors"
          aria-hidden="true">
         <div class="modal-dialog modal-lg">

@@ -22,14 +22,14 @@
                                 <form role="form" class="form-horizontal" method="POST" action="{{ route('login') }}">
                                     {{ csrf_field() }}
 
-                                    <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                                    <div class="form-group">
                                         <label for="email" class="col-sm-2 control-label">
                                             Email</label>
                                         <div class="col-sm-10">
                                             <input type="email" class="form-control" id="email1" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus/>
                                         </div>
                                     </div>
-                                    <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                                    <div class="form-group">
                                         <label for="password" class="col-sm-2 control-label">
                                             密码</label>
                                         <div class="col-sm-10">

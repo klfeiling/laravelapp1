@@ -1,11 +1,11 @@
-@if ($errors->has('name') || $errors->has('phone') || $errors->has('password'))
+@if ($errors->has('email') || $errors->has('name') || $errors->has('phone') || $errors->has('password') && $errors->first('email') != 'These credentials do not match our records.')
     <div class="modal fade" id="myModalRegisterErrors" tabindex="-1" role="dialog"
          aria-labelledby="myLargeModalLabelRegisterErrors"
          aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" data-toggle="modal" data-target="#myModal"
+                    <button type="button" class="close" data-dismiss="modal"
                             aria-hidden="true">
                         &times;
                     </button>
@@ -15,6 +15,13 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-sm-10">
+                            @if ($errors->has('email'))
+                                <p>
+                                <span class="help-block">
+                                <strong>该账户已注册，请更换邮箱</strong>
+                                </span>
+                                </p>
+                            @endif
                             @if ($errors->has('name'))
                                 <p>
                                 <span class="help-block">
