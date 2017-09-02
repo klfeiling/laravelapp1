@@ -27,12 +27,6 @@
                                             Email</label>
                                         <div class="col-sm-10">
                                             <input type="email" class="form-control" id="email1" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus/>
-
-                                            @if ($errors->has('email'))
-                                                <span class="help-block">
-                                                    <strong>{{ $errors->first('email') }}</strong>
-                                                </span>
-                                            @endif
                                         </div>
                                     </div>
                                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -40,12 +34,6 @@
                                             密码</label>
                                         <div class="col-sm-10">
                                             <input id="password" type="password" class="form-control" name="password" placeholder="password"  required/>
-
-                                            @if ($errors->has('password'))
-                                                <span class="help-block">
-                                                    <strong>{{ $errors->first('password') }}</strong>
-                                                </span>
-                                            @endif
                                         </div>
                                     </div>
                                     <div class="row">
@@ -69,3 +57,5 @@
 </div>
 
 @include('auth.passwords.email')
+@include('errors.LoginErrors')
+@include('errors.RegisterErrors')
