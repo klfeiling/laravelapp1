@@ -1,4 +1,4 @@
-@if ($errors->has('email') || $errors->has('name') || $errors->has('phone') || $errors->has('password') && $errors->first('email') != 'These credentials do not match our records.')
+@if ($errors->has('email')&& $errors->first('email') != 'These credentials do not match our records.' || $errors->has('name') || $errors->has('phone') || $errors->has('password'))
     <div class="modal fade" id="myModalRegisterErrors" tabindex="-1" role="dialog"
          aria-labelledby="myLargeModalLabelRegisterErrors"
          aria-hidden="true">
