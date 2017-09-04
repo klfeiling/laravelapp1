@@ -332,8 +332,7 @@ a.btn { text-align: center; text-decoration: none;}
 	float:left;
 }
 .search{
-	float:right;
-	width: 35%;
+	margin: 0 2% 0 2%;
 }
 
 /*--start-search--*/
@@ -1450,13 +1449,23 @@ i.fa.fa-thumbs-up {
 	margin-right:3%;
 	margin-top:1.5em;
 }
+
+.m-select-button {
+	float:left;
+	margin-right:3%;
+	margin-left:5%;
+	margin-top:1.2em;
+}
+
 .m-select-movie {
 	float:left;
-	margin-right:5%;
+	margin-right:3%;
+	margin-left:3%;
 }
 .m-select-date {
 	float:left;
 	width:25%;
+	margin-right:3%;
 }
 .article-left h3 {
 	color: #000;
@@ -4072,11 +4081,11 @@ p.fourth {
 		margin: 0 5px;
 	}
 	.search {
-		width: 48%;
+		width: 100%;
 	}
 	.search2 {
 		padding: 5px;
-		margin: 4px 0px 0px 0em;
+		margin: 4px 2% 0px 0em;
 	}
 	.main-content {
 		margin-top: 2.5em;
@@ -4356,7 +4365,7 @@ p.fourth {
 		font-size: 0.9em;
 	}
 	.search {
-		width: 57%;
+		width: 100%;
 	}		
 	.logo h1 {
 		font-size: 2.3em;
