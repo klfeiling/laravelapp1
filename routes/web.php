@@ -35,6 +35,8 @@ Route::get('/unlogin', function () {
 
 Route::post('/CoRInfo', 'CopyRightInfoMailController@SendEmail')->name('CoRInfo');
 
+Route::post('/CalcCoR', 'CalcCopyrightController@calc')->name('CalcCoR');
+
 Route::get('/information','authPersonalInformationController@show' )->name('infoShow')->middleware('auth');
 
 Route::post('/information', 'authPersonalInformationController@save')->name('infoUpdate');

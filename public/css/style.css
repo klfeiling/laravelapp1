@@ -347,7 +347,7 @@ a.btn { text-align: center; text-decoration: none;}
 }
 .search2 input[type="text"] {
 	outline: none;
-	color: #D8D8D8;
+	color: #756B6B;
 	background: none;
 	font-size: 0.9em;
 	border: none;
@@ -411,7 +411,7 @@ a.btn { text-align: center; text-decoration: none;}
 	  width: 100%;
   padding: 6px;
   border: 1px solid#aeaeae;
-  color: #000;
+  color: #756B6B;
   font-size: 0.9em;
   margin-top: 15px;
   font-weight: 400;
@@ -460,6 +460,7 @@ span.fleft.mr20 {
 	  margin-right: 13px;
   font-size: 1em;
   font-weight: 300;
+	color: #756B6B;
   vertical-align: top;
   font-family: 'Open Sans', sans-serif;
 }
