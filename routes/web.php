@@ -33,6 +33,12 @@ Route::get('/unlogin', function () {
     return view('errors.unlogin');
 });
 
+Route::get('/UserAvatar', 'UserAvatarController@show')->name('getimg');
+
+Route::post('/avatars', 'UserAvatarController@update')->name('avatar');
+
+Route::post('/contact', 'ContactController@save')->name('contact');
+
 Route::post('/CoRInfo', 'CopyRightInfoMailController@SendEmail')->name('CoRInfo');
 
 Route::post('/CalcCoR', 'CalcCopyrightController@calc')->name('CalcCoR');

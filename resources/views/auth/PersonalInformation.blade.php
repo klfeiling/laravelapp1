@@ -67,18 +67,35 @@
 
                             <div class="tab-pane" id="about">
                               <div class="row">
+                                <h4 class="info-text">&nbsp;</h4>
+                                  <form role="form" action="{{ route('avatar') }}" method="post" enctype="multipart/form-data">
+                                      {{ csrf_field() }}
+                                      <div class="col-sm-4 col-sm-offset-1">
+                                          <div class="picture-container">
+                                              <div class="picture">
+                                                  @if(file_exists(storage_path('app/uploads/avatars/'.Auth::user()->id.".jpg")))
+                                                      <img src="{{route('getimg')}}" class="picture-src"
+                                                           id="wizardPicturePreview" title=""/>
+                                                  @else
+                                                      <img src={{asset('images/default-avatar.png')}} class="picture-src"
+                                                           id="wizardPicturePreview" title=""/>
+                                                  @endif
+                                                  <input name="avatar" type="file" id="wizard-picture">
+                                              </div>
+                                          </div>
+                                          <div class="text-center">
+                                              <div class="form-group">
+                                                  @if(file_exists(storage_path('app/uploads/avatars/'.Auth::user()->id.".jpg")))
+                                                      <input type="submit" value="更新头像" class="btn btn-primary">
+                                                  @else
+                                                      <input type="submit" value="上传头像" class="btn btn-primary">
+                                                  @endif
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </form>
                                   <form role="form" action="{{ route('infoUpdate') }}" method="post">
                                       {{ csrf_field() }}
-                                <h4 class="info-text">&nbsp;</h4>
-                                    <div class="col-sm-4 col-sm-offset-1">
-                                         <div class="picture-container">
-                                              <div class="picture">
-                                                  <img src="images/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
-                                                  <input type="file" id="wizard-picture">
-                                              </div>
-                                              <h6>Choose Picture</h6>
-                                          </div>
-                                    </div>
                                     <div class="col-sm-6">
                                       <div class="form-group">
                                         <label>姓名</label>
@@ -102,7 +119,7 @@
                                         <input name="phone" type="text" class="form-control" value="{{ Auth::user()->phone }}">
                                       </div>
                                     </div>
-                                    <div class="col-sm-10 col-sm-offset-5">
+                                    <div class="text-center">
                                      <div class="form-group">
                                            <input type="submit" value="修改信息" class="btn btn-primary">
                                      </div>
@@ -129,7 +146,7 @@
                                                 <input name="password_confirmation" type="password" class="form-control"  value="" placeholder="Repeat password">
                                             </div>
                                         </div>
-                                        <div class="col-sm-10 col-sm-offset-5">
+                                        <div class="text-center">
                                             <div class="form-group">
                                                 <input type="submit" value="修改密码" class="btn btn-primary">
                                             </div>

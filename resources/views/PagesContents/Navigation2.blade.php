@@ -23,21 +23,22 @@
                 <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">联系我们<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <form id="contact1" action="#" name="contactform" method="post">
+                            <form id="contact" action="{{ route('contact') }}" name="contactform" method="post">
+                                {{ csrf_field() }}
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <input type="text" name="姓名" id="name1" class="form-control" placeholder="姓名">
-                                    <input type="text" name="email" id="email1" class="form-control" placeholder="Email">
+                                    <input id="name" type="text" name="name" class="form-control" placeholder="姓名" required/>
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required/>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <input type="text" name="联系方式" id="phone1" class="form-control" placeholder="联系方式">
-                                    <input type="text" name="主题" id="subject1" class="form-control" placeholder="主题">
+                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="电话" required/>
+                                    <input type="text" name="subject" id="subject" class="form-control" placeholder="主题" required/>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <textarea class="form-control" name="comments" id="comments1" rows="6" placeholder="内容 ..."></textarea>
+                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="内容 ..."></textarea>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="pull-right">
-                                        <input type="提交" value="提交" id="submit1" class="btn btn-primary small">
+                                        <input type="submit" value="提交" id="submit" class="btn btn-primary small">
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
