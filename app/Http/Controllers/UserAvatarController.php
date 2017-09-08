@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use DB;
+use Auth;
 
 class UserAvatarController extends Controller
 {
@@ -16,6 +19,16 @@ class UserAvatarController extends Controller
     {
         $file = $request->file('avatar');
 
+        if(file_exists(storage_path('app/uploads/avatars/'.Auth::user()->id.'.'.Auth::user()->ImgFormat))){
+
+            Storage::delete('uploads/avatars/'.Auth::user()->id.'.'.Auth::user()->ImgFormat);
+
+        }
+
+        if($file == null){
+            return back();
+        }
+
         if($file->isValid()){
 
             $extension = $file->getClientOriginalExtension();
@@ -24,17 +37,29 @@ class UserAvatarController extends Controller
 
             $newName = $ID.".".$extension;
 
-            $path = $file->storeAs('uploads/avatars',$newName);
+            $file->storeAs('uploads/avatars',$newName);
 
-            return $path;
+            DB::update('update users set ImgFormat=? where id = ?',[$extension,$request->user()->id]);
+
+            return back();
 
         }
-        return back();
+
+        else
+            return back();
+
     }
 
+    /**
+     * 展示用户头像.
+     *
+     * @return  string
+     */
+
     public function show(){
-        $path=storage_path().'/app/uploads/avatars/'.Auth::user()->id.'.jpg';
-        //dd($path);
+
+        $path=storage_path().'/app/uploads/avatars/'.Auth::user()->id.'.'.Auth::user()->ImgFormat;
+
         return response()->file($path);
     }
 }

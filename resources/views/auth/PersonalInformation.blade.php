@@ -73,7 +73,7 @@
                                       <div class="col-sm-4 col-sm-offset-1">
                                           <div class="picture-container">
                                               <div class="picture">
-                                                  @if(file_exists(storage_path('app/uploads/avatars/'.Auth::user()->id.".jpg")))
+                                                  @if(file_exists(storage_path('app/uploads/avatars/'.Auth::user()->id.'.'.Auth::user()->ImgFormat)))
                                                       <img src="{{route('getimg')}}" class="picture-src"
                                                            id="wizardPicturePreview" title=""/>
                                                   @else
@@ -85,7 +85,7 @@
                                           </div>
                                           <div class="text-center">
                                               <div class="form-group">
-                                                  @if(file_exists(storage_path('app/uploads/avatars/'.Auth::user()->id.".jpg")))
+                                                  @if(file_exists(storage_path('app/uploads/avatars/'.Auth::user()->id.'.'.Auth::user()->ImgFormat)))
                                                       <input type="submit" value="更新头像" class="btn btn-primary">
                                                   @else
                                                       <input type="submit" value="上传头像" class="btn btn-primary">
