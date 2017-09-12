@@ -1,7 +1,7 @@
 <div class="header-top-strip">
     <div class="container">
         <div class="header-top-left">
-            <p><a href="#">24/7 Customer Care</a> | <a class="play-icon popup-with-zoom-anim" href="#"> Resend 		Booking Confirmation</a> </p>
+            <p><a href="#">Customer Care</a> | <a class="play-icon popup-with-zoom-anim" href="#"> Resend Confirmation</a> </p>
         </div>
         @if (Auth::guest())
             <div class="header-top-right">

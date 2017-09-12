@@ -3143,6 +3143,21 @@ select.list_of_vochers {
 	margin-top:1em;
 	    color: #007DD3;
 }
+.webIntro-page {
+	padding: 5em 10em;
+}
+.webIntro-page h4 {
+	font-size:3em;
+	text-align:center;
+}
+.webIntro-page p {
+	display:block;
+	font-size:1.5em;
+	text-align:left;
+	text-indent: 2em;
+	margin-top:1em;
+	color: rgba(67, 73, 74, 0.8);
+}
 .regions {
 	padding:1em;
 }

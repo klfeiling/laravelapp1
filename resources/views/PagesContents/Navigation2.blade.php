@@ -8,7 +8,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="index">首页</a></li>
                 <!-- Mega Menu -->
-                <li class="dropdown w3_megamenu-fw"><a href="show" >电影估值<b class="caret"></b></a></li>
+                <li><a href="show" >电影估值</a></li>
 
                 <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">关于我们<b class="caret"></b></a>
                     <ul class="dropdown-menu" role="menu">
