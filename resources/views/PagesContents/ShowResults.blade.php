@@ -32,16 +32,16 @@
                 <li class="location">
                     <a href=""><i class="fa fa-map-marker"></i>Theater Name: Location</a>
                 </li>
-                <li class="time">
+                <li>
                     <a href="">11:00 AM</a>
                 </li>
-                <li class="time">
+                <li>
                     <a href="">3:00 PM</a>
                 </li>
-                <li class="time">
+                <li>
                     <a href="">6:20 PM</a>
                 </li>
-                <li class="time">
+                <li>
                     <a href="">9:00 PM</a>
                 </li>
             </ul>
@@ -51,16 +51,16 @@
                 <li class="location">
                     <a href=""><i class="fa fa-map-marker"></i>Theater Name: Location</a>
                 </li>
-                <li class="time">
+                <li>
                     <a href="">11:00 AM</a>
                 </li>
-                <li class="time">
+                <li>
                     <a href="">3:00 PM</a>
                 </li>
-                <li class="time">
+                <li>
                     <a href="">6:20 PM</a>
                 </li>
-                <li class="time">
+                <li>
                     <a href="">9:00 PM</a>
                 </li>
             </ul>
@@ -91,7 +91,7 @@
 
         <form role="form" action="{{ route('CoRInfo') }}" method="post">
             {{ csrf_field() }}
-            <div class="col-sm-offset-5">
+            <div class="text-center">
                 <div class="form-group">
                     <input type="submit" value="发送版权信息到邮箱" class="btn btn-primary">
                 </div>

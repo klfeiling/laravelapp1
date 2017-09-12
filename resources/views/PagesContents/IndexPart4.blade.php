@@ -117,7 +117,7 @@
                     <ul class="tab_img">
                         <li>
                             <div class="view view-first">
-                                <a "> <img src="images/pic-4.jpg" class="img-responsive" alt=""/></a>
+                                <a> <img src="images/pic-4.jpg" class="img-responsive" alt=""/></a>
                                 <div class="mask">
                                     <div class="info1"> </div>
                                 </div>

@@ -10,5 +10,9 @@
 			@include('PagesContents.ShowInput')
 			@include('PagesContents.ShowResults')
 		</div>
+		<div class="clearfix"></div>
+		<div class="copy-rights text-center">
+			<p>&nbsp;</p>
+		</div>
 	</div>
 @stop

@@ -3649,12 +3649,7 @@ img.pp-img {
 	font-weight: 600;
 	margin-bottom:1em;
 }
-.ticket-note h3{
-	font-size: 1.5em;
-	text-transform: capitalize;
-	font-weight: 600;
-	margin-bottom:1em;
-}
+
 .payment-right h6 {
 	      margin: 0.8em 0;
     font-weight: 600;
@@ -3696,6 +3691,13 @@ img.pp-img {
 	border: 1px solid #eee;
 	background-color:#FDFDFD;	
 	margin-top:2em;
+	margin-bottom:1em;
+}
+.ticket-note h3{
+	font-size: 1.5em;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-bottom:1em;
 }
 .ticket-note ol {
 	padding-left: 19px;
@@ -3703,7 +3705,6 @@ img.pp-img {
 .ticket-note p {
 	margin:0.5em 0;
 	line-height:1.8em;
-	font-size:0.95em;
 	font-size:0.95em;
 	color:#8B8B8B;
 }
@@ -3733,6 +3734,15 @@ label {
 	width: 60%;
 	margin-left: 5%;
 }
+.movie-date-selection {
+	margin-bottom:1em;
+	background-color: #FCFCFC;
+	border: 1px solid #eee;
+}
+.movie-date-selection ul {
+	padding: 2em;
+	margin-left: 1.5%;
+}
 .movie-date-selection ul li {
 	display: inline-block;
 	width:20%;
@@ -3744,12 +3754,6 @@ label {
 	margin-bottom:0.8em;
 	font-size:1.2em;
 	font-weight:600;
-}
-.movie-date-selection ul {
-	padding: 2em;
-	background-color: #FCFCFC;
-	margin-left: 1.5%;
-	border: 1px solid #eee;
 }
 .movie-date-selection ul li a{
 	color: #007DD3;
@@ -3764,9 +3768,6 @@ i.fa.fa-map-marker {
 	font-weight: 600;
 	color: #000;
 	text-decoration:none;
-}
-.movie-date-selection {
-	margin-bottom:1em;
 }
 .movie-date-selection ul:hover {
 	background-color: #fff;

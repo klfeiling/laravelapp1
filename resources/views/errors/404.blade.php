@@ -13,5 +13,9 @@
                 <a href="index">Go Back To Home Page</a>
             </div>
         </div>
+        <div class="clearfix"></div>
+        <div class="copy-rights text-center">
+            <p>&nbsp;</p>
+        </div>
     </div>
 @stop

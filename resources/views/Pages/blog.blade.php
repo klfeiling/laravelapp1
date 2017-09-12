@@ -13,5 +13,9 @@
 				<p>数据方面，通过编写网络爬虫脚本，从各个票房数据网络获取到所需要的各种数据，按照一定的过滤规则滤出信息并存放到数据库中，作为神经网络的训练集和监督集。</p>
 			</div>
 		</div>
+		<div class="clearfix"></div>
+		<div class="copy-rights text-center">
+			<p>&nbsp;</p>
+		</div>
 	</div>
 @stop
